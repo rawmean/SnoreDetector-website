@@ -214,27 +214,27 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 560px;
+    min-height: 650px;
 }
 
 .hero-visual::before {
     content: "";
     position: absolute;
-    width: 78%;
-    height: 78%;
+    width: 90%;
+    height: 92%;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 28px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015));
-    transform: rotate(-5deg);
+    transform: rotate(3deg);
 }
 
 .hero-image {
     position: relative;
-    width: 304px;
+    width: min(100%, 480px);
     height: auto;
-    border-radius: 34px;
+    border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.16);
-    box-shadow: var(--shadow), 0 0 70px rgba(165, 199, 176, 0.11);
+    box-shadow: var(--shadow), 0 0 70px rgba(25, 203, 225, 0.13);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -669,7 +669,9 @@ img {
         min-height: 0;
     }
 
-    .hero-image { width: 230px; }
+    .hero-visual::before { width: min(78%, 430px); }
+
+    .hero-image { width: min(100%, 480px); }
 
     .feature-grid,
     .steps {
@@ -718,7 +720,13 @@ img {
         padding: 7px 10px;
     }
 
-    .hero-image { width: 190px; }
+    .hero-visual::before { width: 84%; }
+
+    .hero-image {
+        width: 100%;
+        max-width: 420px;
+        border-radius: 16px;
+    }
 
     .section-heading h2,
     .privacy-banner-content h2,
