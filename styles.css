@@ -230,7 +230,8 @@ img {
 
 .hero-image {
     position: relative;
-    width: min(100%, 480px);
+    width: min(130%, 624px);
+    max-width: none;
     height: auto;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.16);
@@ -671,7 +672,7 @@ img {
 
     .hero-visual::before { width: min(78%, 430px); }
 
-    .hero-image { width: min(100%, 480px); }
+    .hero-image { width: min(130%, 624px); }
 
     .feature-grid,
     .steps {
@@ -723,8 +724,7 @@ img {
     .hero-visual::before { width: 84%; }
 
     .hero-image {
-        width: 100%;
-        max-width: 420px;
+        width: min(130%, calc(100vw - 36px), 546px);
         border-radius: 16px;
     }
 
