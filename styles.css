@@ -518,6 +518,19 @@ img {
     margin-top: 8px;
 }
 
+.footer-reddit {
+    opacity: 0.45;
+    transition: opacity 0.25s ease;
+}
+
+.footer-reddit:hover {
+    opacity: 0.8;
+}
+
+.footer-reddit a {
+    color: inherit;
+}
+
 /* Legal Pages */
 .legal-page {
     max-width: 820px;
